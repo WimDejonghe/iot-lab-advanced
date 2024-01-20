@@ -9,11 +9,12 @@ module.exports = {
   description: 'Starter template',
 
   theme: defaultTheme({
-    //logo: '/images/linux.png',
+    logo: 'https://www.vives.be/sites/default/files/uploads/huisstijl/Logo VIVES Hogeschool - Smile.png',
     navbar: [
+
       { text: 'Toledo', link: 'https://toledo.kuleuven.be/portal' },
-      { text: 'Report Issue', link: 'https://github.com/BioBoost/course_linux_essentials/issues' },
-      { text: 'Organization', link: 'https://github.com/vives-linux-essentials-2022-2023' }
+      { text: 'Report Issue', link: 'https://github.com/WimDejonghe/iot-lab-advanced/issues' },
+      { text: 'Organization', link: 'https://github.com/WimDejonghe/iot-lab-advanced' }
     ],
     sidebar: [
       {
@@ -21,7 +22,7 @@ module.exports = {
         link: '/about-this-course/README.md',
       },
       {
-        text: 'Introduction to Programming',
+        text: 'Introduction to ESP32',
         children: [
           '/a-introductory/01-introduction/README.md',
           '/a-introductory/02-introduction/README.md',
