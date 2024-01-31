@@ -6,7 +6,7 @@ import { path } from '@vuepress/utils'
 module.exports = {
   lang: 'en-US',
   title: 'VIVES IoT Lab Advanced',
-  description: 'Curus voor Graduaat studenten Internet Of Things VIVES Kortrijk',
+  description: 'Cursus voor Graduaat studenten Internet Of Things VIVES Kortrijk',
   head: [
     ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?familiy=Material+Icons' }],
     ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML', async: true }]
