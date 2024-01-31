@@ -31,7 +31,8 @@ module.exports = {
         children: [
           '/a-zevensegment/01-display/README.md',
           '/a-zevensegment/02-schema/README.md',
-          
+          '/a-zevensegment/03-flowchart/README.md',
+          '/a-zevensegment/04-programma/README.md',
         ]
       },
      
