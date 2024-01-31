@@ -27,17 +27,17 @@ module.exports = {
         link: '/about-this-course/README.md',
       },
       {
-        text: 'Introduction to ESP32',
+        text: 'Zeven segment display',
         children: [
-          '/a-introductory/01-introduction/README.md',
-          '/a-introductory/02-introduction/README.md',
+          '/a-zevensegment/01-display/README.md',
+          '/a-zevensegment/02-schema/README.md',
           
         ]
       },
      
     ],
     sidebarDepth: 1,
-    repo: 'WimDejonghe/vuePress2-starter',
+    repo: 'WimDejonghe/iot-lab-advanced',
     docsDir: 'docs',
     docsBranch: 'master'
   }),
