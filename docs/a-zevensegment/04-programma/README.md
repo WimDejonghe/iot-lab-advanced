@@ -6,5 +6,17 @@ Een deel van het programma om de 7-segment display op te laten tellen is afgebee
 
 # Opdracht
 
-
+<div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
+<p style="color:lightgreen; margin:10px">
+Opdracht: Een 7-segment display laten optellen:
+<ul>
+<li>Schrijf een programma die een 7-segment display laat optellen van 0 naar 9. Tussen ieder cijfer plaats je een delay van 1 seconde. Herhaal de voorgaande cyclus in een oneindige lus.</li>
+<li>Maak gebruik van de ESP32 feather van Adafruit, een 7-segment display (SC56-11EWA), een breadbord, voorschakelweerstanden en de nodige verbindingsdraden.</li>
+<li>Teken eerst het schema in Visio</li>
+<li>Bouw vervolgens de schakeling</li>
+<li>Programmeer het programma en test het</li>
+<li>Toon de werking aan de docent</li>
+</ul>
+</p>
+</div>
 
