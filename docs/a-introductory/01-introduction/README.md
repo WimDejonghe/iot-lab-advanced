@@ -15,3 +15,5 @@ $$ e^{i\pi}+1=0 $$
 
 
 $$\delta = \frac{T_{on}} {T}.100\%$$
+
+$$\delta = \frac{T_{on}} {T}.100\%$$
