@@ -35,12 +35,21 @@ module.exports = {
           '/a-zevensegment/04-programma/README.md',
         ]
       },
+      {
+        text: 'Methoden',
+        children: [
+          '/b-methoden/01-methode_zonder/README.md',
+          '/b-methoden/02-methode_met/README.md',
+          '/b-methoden/03-methode_return/README.md',
+          
+        ]
+      },
      
     ],
     sidebarDepth: 1,
     repo: 'WimDejonghe/iot-lab-advanced',
     docsDir: 'docs',
-    docsBranch: 'master'
+    docsBranch: 'main'
   }),
   serviceWorker: true,
   plugins: [
