@@ -44,6 +44,16 @@ module.exports = {
           
         ]
       },
+      {
+        text: 'BCD naar 7segment converter',
+        children: [
+          '/c-driver/01-4511/README.md',  
+          '/c-driver/02-schema/README.md', 
+          '/c-driver/03-werking/README.md',  
+          '/c-driver/04-flowchart/README.md', 
+          '/c-driver/05-programma/README.md',               
+        ]
+      },
      
     ],
     sidebarDepth: 1,
