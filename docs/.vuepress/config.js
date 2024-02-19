@@ -54,6 +54,14 @@ module.exports = {
           '/c-driver/05-programma/README.md',               
         ]
       },
+      {
+        text: 'Parallelle communicatie',
+        children: [
+          '/d-parallel/01-pvs/README.md',  
+          '/d-parallel/02-lcd/README.md', 
+                       
+        ]
+      },
      
     ],
     sidebarDepth: 1,
