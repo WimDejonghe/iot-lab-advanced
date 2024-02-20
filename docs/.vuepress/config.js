@@ -59,7 +59,7 @@ module.exports = {
         children: [
           '/d-parallel/01-pvs/README.md',  
           '/d-parallel/02-lcd/README.md', 
-                       
+          '/d-parallel/03-opdracht/README.md',              
         ]
       },
      
