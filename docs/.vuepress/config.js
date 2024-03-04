@@ -62,6 +62,16 @@ module.exports = {
           '/d-parallel/03-opdracht/README.md',              
         ]
       },
+      {
+        text: 'Interrupts',
+        children: [
+          '/e-interrupt/01-polling/README.md',  
+          '/e-interrupt/02-interrupt/README.md', 
+          '/e-interrupt/03-hardware/README.md',
+          '/e-interrupt/04-voorbeeld/README.md',  
+          '/e-interrupt/05-opdracht/README.md',            
+        ]
+      },
      
     ],
     sidebarDepth: 1,
