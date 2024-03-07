@@ -55,4 +55,22 @@ De derde en laatste parameter is wanneer de interruptmethode moet uitgevoerd wor
 
 De derde parameter kan de volgende waarden aannemen:
 > - LOW : Triggeren van de interrupt wanneer de pin laag is.
-> - 
+> - HIGH Triggeren van de interrupt wanneer de pin hoog is.
+> - CHANGE Triggeren van de interrupt wanneer de pin wijzigt van toestand.
+> - FALLING Triggeren van de interrupt bij een dalende flank van de ingang.
+> - RISING Triggeren van de interrupt bij een stijgende flank van de ingang.
+
+## De interruptroutine.
+
+Een voorbeeld van een interruptroutine (ISR) is weergegeven in de volgende figuur. De interruptroutine begint met ‘void IRAM_ATTR’ gevold door de naam van de routine. Aan een interruptroutine worden er geen parameters meegegeven.
+
+De body en de code van de routine wordt geplaatst tussen accolades.
+
+![De interruptroutine.](./images/isr.png)
+
+## De ontkoppelen van een interruptroutine van een ingang.
+
+Als je in de code de interruptroutine niet meer wenst te gebruiken kan de je interruptroutine altijd ontkoppelen. Dit kan je doen door gebruik te maken van de detachInterrupt methode. Aan deze methode moet je de pin meegeven waarvan je de interrupt wil ontkoppelen.
+
+![Loskoppelen van een interrupt aan een ingang.](./images/isr2.png)
+
