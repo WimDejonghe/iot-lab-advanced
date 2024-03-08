@@ -11,7 +11,7 @@ mathjax:
 <p style="color:lightgreen; margin:10px">
 Opdracht: Schrijf een programma dat éénmalig uw naam op het LCD toont.
 <ul style="color: white;">
-<li>Maak gebruik van de ESP32 feather van Adafruit, een 2x16 LCD, een breadbord en een LDR.</li>
+<li>Maak gebruik van de ESP32 feather van Adafruit, een 2x16 LCD, een breadbord.</li>
 <li>Zorg dat uw voornaam op de bovenste rij van het display staat, en uw familienaam op de tweede lijn.</li>
 <li>Gebruik hiervoor het SetCursor commando.</li>
 <li>Bouw vervolgens de schakeling</li>
