@@ -56,6 +56,8 @@ In de loop-methode vanaf lijn 23 zal men voortdurend de tijd van de controller o
 Op lijn 26 zal men kijken als er 500milliseconden (=constante PERIODE) verstreken zijn. Is dit zo dan zal men de toestand van de led inverteren (lijn 29 en 30) en zal men De huidige tijd gelijkmaken aan Starttijd om terug een verschil van 500ms te kunnen vergelijken.
 Is de 500ms niet versterken, dan zal men niets doen en voorrdurend kijken of deze wel is verstreken.
 
+## Opdracht
+
 <div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
 <p style="color:lightgreen; margin:10px">
 Opdracht: Blokgolf met millis
