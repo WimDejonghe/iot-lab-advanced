@@ -72,6 +72,14 @@ module.exports = {
           '/e-interrupt/05-opdracht/README.md',            
         ]
       },
+      {
+        text: 'Timers',
+        children: [
+          '/f-timer/01-millis/README.md',  
+          '/f-timer/02-hardware_timer/README.md', 
+                      
+        ]
+      },
      
     ],
     sidebarDepth: 1,
