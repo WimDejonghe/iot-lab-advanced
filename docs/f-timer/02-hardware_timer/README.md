@@ -13,13 +13,13 @@ Door gebruik te maken van timer-interrupts kan men veel van de nadelen van het g
 De frequentie van de teller werkt op 80MHz. Dit wil zeggen dat kleinste tijd van het verhogen van de tellers gelijk is aan 12,5 nanoseconden.
 :::
 
-$$ T_{min} = \frac{1} {80Mhz} = 12,5.10^{-9}sec $$
+$$ T_{min} = \frac{1} {80Mhz} = 12,5.10^{-9}sec = 12,5 nsec $$
 
-:::note
-12,5 nsec is veel kleiner dan de tijd van millis() die 1 msec is. Natuurlijk is 12,5 nsec in veel gevallen te klein maar daarom kan er gebruik gemaakt worden van een 16 bit prescaler. Door gebruik te maken van de prescaler kan het interval dat de teller verhoogd wordt vergroot worden naar maximum 819,2 μsec.
+:::detail
+12,5 nsec (nano seconde) is veel kleiner dan de tijd van millis() die 1 msec is. Natuurlijk is 12,5 nsec in veel gevallen te klein maar daarom kan er gebruik gemaakt worden van een 16 bit prescaler. Door gebruik te maken van de prescaler kan het interval dat de teller verhoogd wordt vergroot worden naar maximum 819,2 μsec (micro seconde).
 :::
 
-$$ T_{max} = T_{min}2^{16} = 12,5.10^{-9}sec.65536 = 819,2.10^{-6}sec  $$
+$$ T_{max} = T_{min}2^{16} = 12,5.10^{-9}sec.65536 = 819,2.10^{-6}sec = 819,2 µsec $$
 
 ## Declareren van de timer
 
