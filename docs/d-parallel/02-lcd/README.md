@@ -76,12 +76,67 @@ Klik je nu op de ‘platformio.ini’- file (1). Dan zie je dat er een lijn is t
 
 Het programma dat we gaan gebruiken is in de volgende figuur afgebeeld. Op lijn 6 en 7 zijn de gebruikte bibliotheken die het programma nodig heeft toegevoegd. Zonder deze twee lijnen zal de compiler de nodige gegevens niet vinden.
 
-![Voorbeeldprogramma LCD display.](./images/code1.png)
-![Voorbeeldprogramma LCD display.](./images/code2.png)
+
+```cpp
+#include <Arduino.h>
+#include <Wire.h>
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(14, 32, 33, 27, 12, 13 );//RS,E,D4,D5,D6,D7
+
+uint teller = 0;
+void setup()
+{
+  // put your setup code here, to run once:
+  Serial.begin(115200); // open the serial port at 115200 bps:
+ 
+  lcd.begin(16,2);
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("Hallo");
+  lcd.setCursor(0,1);
+  lcd.print("VIVES");
+  delay(3000);
+  lcd.clear();
+  lcd.setCursor(0,0);
+  lcd.print("VIVES");
+  Serial.print("Starting. ");
+}
+
+void loop()
+{
+  // put your main code here, to run repeatedly:
+ 
+   
+    //lcd.print("tel:");
+    //lcd.print(millis() / 1000);
+    char buffer[10];
+    sprintf(buffer, "tel:%d", teller);
+    //Serial.println(buffer);
+    lcd.setCursor(0,1);
+    lcd.printf(buffer);
+    teller++;
+    delay(100);
+ 
+
+}
+```
 
 ## Flowchart
 
 ![Flowchart om tekst op het LCD te tonen.](./images/fc.png)
 
+<div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
+<p style="color:lightgreen; margin:10px">
+Opdracht: Realiseer het bovenstaand project.
+<ul style="color: white;">
+<li>Maak gebruik van de ESP32 feather van Adafruit, een 2x16 LCD, een breadbord.</li>
 
+<li>Bouw vervolgens de schakeling</li>
+<li>Programmeer het programma en test het</li>
+<li>Toon de werking aan de docent</li>
+<li>Bespreek de werking van harware en software in het verslag</li>
+</ul>
+</p>
+</div>
 
