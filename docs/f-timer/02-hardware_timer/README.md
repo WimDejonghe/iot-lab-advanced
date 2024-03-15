@@ -57,3 +57,57 @@ De derde parameter moet je altijd op true instellen.
 
 De timerAlarmWrite methode stelt de waarde van de teller in wanneer de interrupt gegenereerd moet worden.
 
+![De timerAlarmWrite-methode.](./images/methode.png)
+
+Deze methode heeft 3 parameters. De eerste parameter is de naam van de Timer en is in ons voorbeeld MijnTimer.
+De tweede parameter is de waarde van de teller waarbij de interrupt gegenereed moet worden. Als de teller de waarde 1000000 heeft zal de interrupt gegenereerd worden. Dit wil zeggen dat er een tijd verstreken zal zijn van 1 miljoen microseconden wat dus 1 seconde is. De microseconde is bepaald door de prescaler in te stellen op 80.
+De derde parameter staat op true wat wil zeggen dat er autorelaod gebruikt wordt van de parameter. Dit wil zeggen dat de teller automatisch bij het genereren van de interrupt op nul gezet wordt en dat de interrupt periodiek gegenereerd zal worden.
+
+## timerAlarmEnable methode
+
+De laatste methode die wordt uitgevoerd is de timer
+
+![De timerAlarmEnable-methode.](./images/enable.png)
+
+Deze methode zorgt ervoor dat aan de timer de interruptmethode wordt gekoppeld.
+
+## Opmerking bij timerinterrupts
+
+Bij geplande uitvoering van code moeten we voorzichtig zijn met de hoeveelheid code en hoelang het duurt om deze uit te voeren.
+Als we bijvoorbeeld om de één milliseconde een taak moeten uitvoeren, moet die taak minder dan 1 ms seconde duren om deze uit te voeren, anders loopt de timing te hoog op en loopt het systeem niet synchroon. Zoals in volgende figuur.
+
+![Opletten met timers en de hoeveelheid code die uitgevoerd moet worden.](./images/timer.png)
+
+>- Hoeveel code er is, zal bepalen hoe snel de processorklok moet zijn.
+>- We moeten soms prioriteit geven aan de taken. Wordt een taak van 1 ms uitgevoerd voor een taak van 100 ms? (Omdat na 100 ms beide tegelijkertijd willen draaien).
+>- Dit betekent ook dat pauze, wachttijd of vertragingen (d.w.z. timingcontrole door ‘polling’)niet kunnen worden gebruikt binnen geplande programmaontwerpen.
+
+## Handige bijkomende methodes op timers
+
+De voorgaande methodes worden het meest gebruikt. Er zijn nog een tal van andere methodes om te gebruiken bij Timers die in deze paragraaf worden uitgelegd.
+
+### timerReadSeconds
+
+Deze methode geeft de waarde van de meegegeven timer terug in seconden in een variabele van het type double.
+
+![De timerReadSecond methode.](./images/tRead.png)
+
+### timerReadMilis
+
+Deze methode geeft de waarde van de meegegeven timer terug in millieseconden in een 64 bit unsigned integer variabele.
+
+![De timerReadMilis methode.](./images/tRead2.png)
+
+### timerReadMicros
+
+Deze methode geeft de waarde van de meegegeven timer terug in microseconden in een 64 bit unsigned integer variabele.
+
+![De timerReadMicros methode.](./images/microS.png)
+
+### timerRead
+
+Deze methode geeft de waarde van de teller terug en plaatst deze in een 64 bit unsigned integer variabele.
+
+![De timerRead methode.](./images/timerRead.png)
+
+
