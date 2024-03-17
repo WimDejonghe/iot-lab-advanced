@@ -87,27 +87,131 @@ Als we bijvoorbeeld om de één milliseconde een taak moeten uitvoeren, moet die
 De voorgaande methodes worden het meest gebruikt. Er zijn nog een tal van andere methodes om te gebruiken bij Timers die in deze paragraaf worden uitgelegd.
 
 ### timerReadSeconds
-
 Deze methode geeft de waarde van de meegegeven timer terug in seconden in een variabele van het type double.
 
 ![De timerReadSecond methode.](./images/tRead.png)
 
 ### timerReadMilis
-
 Deze methode geeft de waarde van de meegegeven timer terug in millieseconden in een 64 bit unsigned integer variabele.
 
 ![De timerReadMilis methode.](./images/tRead2.png)
 
 ### timerReadMicros
-
 Deze methode geeft de waarde van de meegegeven timer terug in microseconden in een 64 bit unsigned integer variabele.
 
 ![De timerReadMicros methode.](./images/microS.png)
 
 ### timerRead
-
 Deze methode geeft de waarde van de teller terug en plaatst deze in een 64 bit unsigned integer variabele.
 
 ![De timerRead methode.](./images/timerRead.png)
+
+### timerWrite
+Deze code plaatst de waarde van de teller op een waarde 1000.
+
+![De timerWrite methode.](./images/tWrite.png)
+
+### TimerStart
+Deze methode start met het tellen van de timer.
+
+![De timerStart methode.](./images/tStart.png)
+
+### TimerStop
+Deze methode stopt met het tellen van de timer.
+
+![De timerStop methode.](./images/tStop.png)
+
+### TimerEnd
+Deze methode beïndigd het tellen van de timer.
+
+![De timerStop methode.](./images/tEnd.png)
+
+### timerRestart
+Deze methode herstart het tellen van de timer.
+
+![De timerRestart methode.](./images/tRestart.png)
+
+### timerAlarmRead
+Deze methode geeft de waarde van de teller terug waar deze een alarm of interrupt genereerd.
+
+![De timerAlarmRead methode.](./images/tAlarmRead.png)
+
+### timerAlarmReadMicros
+Deze methode geeft de waarde van de teller in microseconden terug waar deze een alarm of interrupt genereerd.
+
+![De timerAlarmReadMicros methode.](./images/tAlarmReadMicros.png)
+
+### timerAlarmReadSeconds
+Deze methode geeft de waarde van de teller in seconden terug waar deze een alarm of interrupt genereerd.
+
+![De timerAlarmReadSeconds methode.](./images/tAlarmReadSeconds.png)
+
+### timerGetDivider
+Deze methode geeft de waarde van de prescaler terug.
+
+![De timerGetDivider methode.](./images/tGetDivider.png)
+
+### timerGetCountUp
+Deze methode geeft de telrichting van de timer terug. True is optellen en false is aftellen.
+
+![De timerGetCountUp methode.](./images/tGetCountUp.png)
+
+### timerGetAutoReload
+Deze methode geeft de waarde true terug als de timer periodiek wordt herladen als er zich een interrupt voordoet. Indien niet wordt de waarde false teruggegeven.
+
+![De timerGetAutoReload methode.](./images/tGetAutoReload.png)
+
+### timerAlarmDisable
+Deze methode schakelt de interrupt op de timer uit.
+
+![De timerAlarmDisable methode.](./images/tAlarmDisable.png)
+
+### timerAlarmEnabled
+Deze methode geeft weer of er een interrupt of een alarm is gekoppeld aan de timer of niet. Bij true is er een interrupt gekoppeld en bij false niet.
+
+![De timerAlarmEnabled methode.](./images/tAlarmEnabled.png)
+
+### timerDetachInterrupt
+Deze methode koppelt de interruptroutine los van de timer.
+
+![De timerDetachInterrupt methode.](./images/tDetachInterrupt.png)
+
+## Een knipperende led door gebruik te maken van interrupts
+Het voorbeeld laat een led knipperen die standaard op de ESP32 feather van Adafruit staat. De led knippert met een frequentie van 0,5Hz.
+
+### Schema
+
+![Schema van een knipperende led.](./images/schema.png)
+
+### Flowchart
+
+Bij de declaratie (1) wordt er een constante aangemaakt met de naam LED die gelijkgesteld wordt aan 13. LED is de naam van de uitgang en 13 is de pinnummer waarmee de led is verbonden.
+Bij de declaratie declareren we ook een timer die de naam MijnTimer heeft en die van het type hw_timer_t is.
+In de setup-methode (2) wordt de IO-pin waarmee de LED is verbonden ingesteld als uitgang en wordt de timer 0 gebruikt die men laat optellen met een tijd van 1μs. Dit wordt gedaan door de prescaler in te stellen op 80. Vervolgens wordt er een interruptroutine aan de timer gekoppeld die de naam ‘onTimer’ heeft. De timer wordt automatisch opnieuw ingesteld bij het bereiken van de interrupt zodat deze periodiek wordt uitgevoerd.
+Daarna wordt de alarmwaarde om de interruptroutine op te roepen ingesteld op 1000000 dat gelijk staat aan 1 seconde.
+Als laatste wordt de timer en de interupt gestart.
+In de loop-methode (3) wordt er niets uitgevoerd omdat alles verloopt via een interrupt. Om de seconde zal de interruptroutine ‘onTimer’ uitgevoerd worden. Waarvan de huidige toestand van de led wordt gelezen. Deze wordt geïnverteerd en tenslotte weer naar de LED gestuurd.
+
+![Schema van een knipperende led.](./images/fc.png)
+
+### Software code
+
+![Schema van een knipperende led.](./images/code.png)
+
+## Opdracht:
+
+<div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
+<p style="color:lightgreen; margin:10px">
+Opdracht: Blokgolf met interrupt timers (1kHz)
+<ul style="color: white;">
+<li>Schrijf een programma die een blokgolfspanning op een uitgang genereert met een frequentie van 1kHz en een duty-cycle van 50%.
+</li>
+<li>Meet, controlleer en visualiseer het signaal met een oscilloscoop</li>
+<li>Toon de werking aan de docent</li>
+<li>Bespreek de werking van harware en software in het verslag</li>
+</ul>
+</p>
+</div>
+
 
 
