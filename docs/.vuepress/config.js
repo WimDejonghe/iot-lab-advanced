@@ -80,6 +80,17 @@ module.exports = {
                       
         ]
       },
+
+      {
+        text: 'Dender effect',
+        children: [
+          '/g-dender/01-dender/README.md',  
+          '/g-dender/02-hardware/README.md', 
+          '/g-dender/03-software/README.md', 
+          '/g-dender/04-opdracht/README.md', 
+                      
+        ]
+      },
      
     ],
     sidebarDepth: 1,
