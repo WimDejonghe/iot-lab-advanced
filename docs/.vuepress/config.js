@@ -91,6 +91,22 @@ module.exports = {
                       
         ]
       },
+
+      {
+        text: 'Seriële communicatie',
+        children: [
+          '/h-serial/01-aansluiting/README.md',  
+          '/h-serial/02-connector/README.md', 
+          '/h-serial/03-rs232/README.md', 
+          '/h-serial/04-ttl/README.md', 
+          '/h-serial/05-serial/README.md', 
+          '/h-serial/06-fout/README.md',     
+          '/h-serial/07-esp32/README.md', 
+          '/h-serial/08-terminal/README.md',  
+          '/h-serial/09-voorbeeld/README.md', 
+          '/h-serial/10-opdracht/README.md',           
+        ]
+      },
      
     ],
     sidebarDepth: 1,
