@@ -19,5 +19,5 @@ Als twee toestellen niet volgens dezelfde afspraken werken, dan begrijpen de toe
 
 In de volgende figuur is het resultaat van garbage getoond waarbij de parameters van de verzender niet kloppen met deze van de ontvanger.
 
-![Het ontvangen van seriële data met verschillende afspraken.](./images/conn.png)
+![Het ontvangen van seriële data met verschillende afspraken.](./images/term.png)
 
