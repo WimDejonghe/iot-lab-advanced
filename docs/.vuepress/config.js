@@ -107,6 +107,14 @@ module.exports = {
           '/h-serial/10-opdracht/README.md',           
         ]
       },
+
+      {
+        text: 'I²C',
+        children: [
+          '/i-i2c/01-i2c/README.md',  
+              
+        ]
+      },
      
     ],
     sidebarDepth: 1,
