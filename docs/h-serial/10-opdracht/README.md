@@ -18,6 +18,8 @@ Opdracht: Voltmeter
 </p>
 </div>
 
+***
+
 <div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
 <p style="color:lightgreen; margin:10px">
 Opdracht: communicatie tussen 2 ESP' (werk met je gebuurt samen zodat je 2 ESP's hebt)
@@ -28,6 +30,8 @@ Opdracht: communicatie tussen 2 ESP' (werk met je gebuurt samen zodat je 2 ESP's
 </ul>
 </p>
 </div>
+
+***
 
 <div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
 <p style="color:lightgreen; margin:10px">
