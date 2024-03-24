@@ -65,6 +65,7 @@ Opdracht: Blokgolf met millis
 <li>Schrijf een programma die een blokgolfspanning op uitgang 12 voorziet met een frequentie van 100Hz en een duty-cycle van 50%.
 </li>
 <li>Meet, controlleer en visualiseer het signaal met een oscilloscoop</li>
+<li>Schrijf de millis waarde om de 100Hz naar de Serial monitor</li>
 <li>Toon de werking aan de docent</li>
 <li>Bespreek de werking van harware en software in het verslag</li>
 </ul>
