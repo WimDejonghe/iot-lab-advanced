@@ -27,4 +27,39 @@ In het onderstaande voorbeeld worden twee IC’s van het type PCF8574 gebruikt. 
 ![Voorbeeldprogramma van het lezen van en schrijven naar twee IO-expanders van het type PCF8574.](./images/code2.png)
 
 
+## Opdrachten:
+
+<div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
+<p style="color:lightgreen; margin:10px">
+Opdracht1: ESP32 als I²C Master en een 8bit GPIO slave.
+<ul style="color: white;">
+<li>Zorg ervoor dat je met het I²C scan programma de bus kan afscannen op zoek naar een slave</li>
+</ul>
+</p>
+</div>
+
+***
+
+<div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
+<p style="color:lightgreen; margin:10px">
+Opdracht2: ESP32 als I²C Master en een 8bit GPIO slave.
+<ul style="color: white;">
+<li>Schakel 8 leds op de GPIO pinnen van de slave (Rv!!!)</li>
+<li>Programmeer op de 8 Leds een continu lopend looplicht.</li>
+</ul>
+</p>
+</div>
+
+***
+
+<div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
+<p style="color:lightgreen; margin:10px">
+Opdracht3: ESP32 als I²C Master en twee 8bit GPIO slave's.
+<ul style="color: white;">
+<li>Schakel 8 leds op de GPIO pinnen van de ene slave.</li>
+<li>Schakel 2 drukknoppen (Pullup R!!) actief laag op de andere slave.</li>
+<li>Programmeer op de 8 Leds, op de ene slave de toestand van ingangen van de andere slave.</li>
+</ul>
+</p>
+</div>
 

@@ -43,3 +43,16 @@ Opdracht: communicatie tussen ESP en NodeRed-dashboard.
 </ul>
 </p>
 </div>
+
+***
+
+<div style="background-color:darkgreen; text-align:left; vertical-align:left; padding:15px;">
+<p style="color:lightgreen; margin:10px">
+Opdracht: communicatie tussen ESP en NodeRed-dashboard 2.
+<ul style="color: white;">
+<li>Maak een dashboard in Node-Red op de laptop.</li>
+<li>Zorg ervoor dat je met 8 mogelijke bedieningen de 8 Leds kan aansturen op de shield</li>
+
+</ul>
+</p>
+</div>
