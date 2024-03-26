@@ -113,7 +113,8 @@ module.exports = {
         children: [
           '/i-i2c/01-i2c/README.md',  
           '/i-i2c/02-esp32/README.md',  
-          '/i-i2c/03-pcf8574/README.md',    
+          '/i-i2c/03-pcf8574/README.md',   
+          '/i-i2c/04-DS1621/README.md',  
         ]
       },
      
