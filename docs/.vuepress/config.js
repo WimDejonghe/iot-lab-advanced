@@ -117,6 +117,16 @@ module.exports = {
           '/i-i2c/04-DS1621/README.md',  
         ]
       },
+      {
+        text: 'SPI',
+        children: [
+          '/i-spi/01-spi/README.md',  
+          '/i-spi/02-esp/README.md',  
+          '/i-spi/03-mcp/README.md', 
+          '/i-spi/04-leds/README.md',  
+           
+        ]
+      },
      
     ],
     sidebarDepth: 1,
