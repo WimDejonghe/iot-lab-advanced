@@ -120,10 +120,10 @@ module.exports = {
       {
         text: 'SPI',
         children: [
-          '/i-spi/01-spi/README.md',  
-          '/i-spi/02-esp/README.md',  
-          '/i-spi/03-mcp/README.md', 
-          '/i-spi/04-leds/README.md',  
+          '/j-spi/01-spi/README.md',  
+          '/j-spi/02-esp/README.md',  
+          '/j-spi/03-mcp/README.md', 
+          '/j-spi/04-leds/README.md',  
            
         ]
       },
