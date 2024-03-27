@@ -3,10 +3,35 @@ mathjax:
   presets: '\def\lr#1#2#3{\left#1#2\right#3}'
 ---
 
+# Methoden
+
 Methoden worden voornamelijk gebruikt als je in een programma steeds dezelfde stukken C-code herhaalt, om complexe code te vereenvoudigen of als je stukken van je programma wil opdelen in verschillende onderdelen.
 Met een goede kennis en verstandig gebruik van functies kan je programma’s sneller en leesbaarder maken en dat maakt van je een goede programmeur.
 
-Methode gaan we indelen in drie groepen, namelijk:
+:::warning
+Het dient hier heel duidelijk vermeld te worden dat ieder eigen geschreven methode in C++, afzonderljk moet gedeclareerd worden. Dit wordt als volgt gedaan.
+:::
+
+```cpp
+#include <Arduino.h>
+void EigenMethode(); //declacratie van de eigen methode
+
+void setup()
+{
+  ...;
+}
+void loop()
+{
+  ...;
+}
+void EigenMethode() //eigen methode
+{
+  ...;
+}
+```
+
+
+Methoden kan men indelen in drie groepen, namelijk:
 - Een methode zonder parameters;
 - Een methode die iets uitvoert afhankelijk van één of meerdere variabelen die wordt meegegeven aan die methode;
 - Een functiemethode die iets uitvoert afhankelijk van een meegegeven variabele maar die ook een resultaat teruggeeft.
@@ -18,7 +43,7 @@ In de volgende figuur is de werking uitgelegd van een methode zonder parameters.
 
 ![Werking van een methode zonder parameters](./images/fc1.png)
 
-Voor het setup of loop methdoen moeten in C, de methode gedeclareerd worden (1). Dit is eigenlijk de eerste regel van de methode gevolgd door een puntkomma. We zien dat in de C-code het eerste woordje void is. Void betekent leeg en wil zeggen dat die functie niets teruggeeft. Tussen de haakjes ‘()’ staat er niets geschreven. Dit wil zeggen dat er geen parameters meegegeven worden aan de methode.
+Voor het setup of loop methoden moeten in C, de methode gedeclareerd worden (1). Dit is eigenlijk de eerste regel van de methode gevolgd door een puntkomma. We zien dat in de C-code het eerste woordje void is. Void betekent leeg en wil zeggen dat die functie niets teruggeeft. Tussen de haakjes ‘()’ staat er niets geschreven. Dit wil zeggen dat er geen parameters meegegeven worden aan de methode.
 
 Het tweede grote deel is de loop-methode (2). Dit is waar de werking van het hoofdprogramma begint waar er allerlei bewerkingen worden uitgevoerd. In het hoofdprogramma wordt de methode ‘MethodeZonderParameters’ aangeroepen. Het aanroepen gebeurt in een rechthoek met voor- en achteraan nog twee extra verticale lijnen. Bij de aanroep wordt er gesprongen naar de methode en wordt deze uitgevoerd (3).
 
