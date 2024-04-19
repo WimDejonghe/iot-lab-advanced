@@ -54,8 +54,9 @@ Opdracht: communicatie tussen ESP en NodeRed-dashboard 2.
 <ul style="color: white;">
 <li>Maak een dashboard in Node-Red op de laptop.</li>
 <li>Zorg ervoor dat je met 8 mogelijke bedieningen de 8 Leds kan aansturen op de shield</li>
-<li>Zorg dat voorgaande met potentiometer (Gauge) op 1 dashboard staat.</li>
+<li>Zorg dat voorgaande met potentiometer (Gauge) ook op deze dashboard staat.</li>
 <li>Zorg dat er op de dashboard ook een visualisatie staat van de 4 drukknoppen.</li>
+<li>Dus alles op 1 dashboard (bediening 8 leds, visualisatie drukknoppen en potentiometer).</li>
 </ul>
 </p>
 </div>
