@@ -27,6 +27,8 @@ Opdracht: communicatie tussen 2 ESP' (werk met je gebuurt samen zodat je 2 ESP's
 <li>Gebruik op beide de extension shield. </li>
 <li>Zorg ervoor dat de 4 drukknoppen van de ene ESP, 4 LED's bedienen op de andere ESP.</li>
 <li>Als voorgaande lukt, zorg dat dit in twee richtingen kan, simultaan.</li>
+<li>Zorg voor een realtime werking (geen delay !!!)</li>
+<li>Door een doordachte code te sturen per button in een continue loop reageren de LEDS direct!!</li>
 </ul>
 </p>
 </div>
@@ -38,8 +40,8 @@ Opdracht: communicatie tussen 2 ESP' (werk met je gebuurt samen zodat je 2 ESP's
 Opdracht: communicatie tussen ESP en NodeRed-dashboard.
 <ul style="color: white;">
 <li>Maak een dashboard in Node-Red op de laptop.</li>
-<li>Display de waarde van de potentiometer (Gauche) in volt, door de waarde van de potentiometer in een loop door te sturen via een seriële verbinding met de laptop.</li>
-
+<li>Display de waarde van de potentiometer (Gauge) in volt, door de waarde van de potentiometer in een loop door te sturen via een seriële verbinding met de laptop.</li>
+<li></li>
 </ul>
 </p>
 </div>
@@ -52,7 +54,8 @@ Opdracht: communicatie tussen ESP en NodeRed-dashboard 2.
 <ul style="color: white;">
 <li>Maak een dashboard in Node-Red op de laptop.</li>
 <li>Zorg ervoor dat je met 8 mogelijke bedieningen de 8 Leds kan aansturen op de shield</li>
-
+<li>Zorg dat voorgaande met potentiometer (Gauge) op 1 dashboard staat.</li>
+<li>Zorg dat er op de dashboard ook een visualisatie staat van de 4 drukknoppen.</li>
 </ul>
 </p>
 </div>
